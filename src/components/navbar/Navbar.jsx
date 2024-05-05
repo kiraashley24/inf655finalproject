@@ -28,10 +28,10 @@ const Navbar = () => {
       </li>
       <li>
         <Link
-          to={"/signUp"}
+          to={"/register"}
           className="hover:text-custom-peach transition-colors duration-200"
         >
-          SignUp
+          Register
         </Link>
       </li>
       <li>
