@@ -3,12 +3,12 @@ import Layout from "../../components/layout/Layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useLocation } from "react-router-dom";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-
+import { CartContext } from "../../context/CartContext";
 
 const ProductInfo = () => {
   const location = useLocation();
   const product = location.state.product;
-
+  const { addToCart } = React.useContext(CartContext);
   return (
     <Layout>
       <section className="py-5 lg:py-16 font-poppins dark:bg-gray-800">
@@ -66,7 +66,7 @@ const ProductInfo = () => {
                 <div className="flex flex-wrap items-center mb-6">
                   <button
                     className="w-full px-4 py-3 text-center text-pink-600 bg-pink-100 border border-pink-600  hover:bg-pink-600 hover:text-gray-100 rounded-xl"
-                    
+                    onClick={() => addToCart(product)}
                   >
                     Add to cart
                   </button>

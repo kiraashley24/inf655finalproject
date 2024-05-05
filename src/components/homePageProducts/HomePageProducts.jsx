@@ -1,10 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import React from 'react'
 import homeData from "./data";
+import { CartContext } from "../../context/CartContext";
 
 const HomePageProductCard = () => {
 const navigate = useNavigate();
-
+const { addToCart } = React.useContext(CartContext);
   return (
     <div className="mt-10">
       <div className="bg-amber-600 p-5">
@@ -38,7 +39,7 @@ const navigate = useNavigate();
                       <div className="flex justify-center">
                         <button
                           className=" bg-amber-500 hover:bg-yellow-600 w-full text-black py-[4px] rounded-lg font-bold"
-                          
+                          onClick={() => addToCart(item)}
                         >
                           Add to Cart
                         </button>
