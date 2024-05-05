@@ -1,34 +1,39 @@
-import apple from "./images/apple.jpg";
-import banana from "./images/banana.jpg";
-import lemon from "./images/lemon.png";
-import lime from "./images/lime.jpg";
-import mango from "./images/mango.jpg";
-import orange from "./images/orange.jpg";
+import fruit from "./images/fruit.jpg";
+import veges from "./images/vegetables.jpeg";
+import meat from "./images/homemeat.jpg";
+import bread from "./images/bread.jpg";
+import dry from "./images/dry.png";
+import snowflake from "./images/snowflake.png";
+import cookie from "./images/cookie.jpg";
 
 const category = [
   {
-    image: apple,
-    name: "apple",
+    image: fruit,
+    name: "Fruit",
   },
   {
-    image: banana,
-    name: "banana",
+    image: veges,
+    name: "Vegetables",
   },
   {
-    image: lemon,
-    name: "lemon",
+    image: meat,
+    name: "Meat",
   },
   {
-    image: lime,
-    name: "lime",
+    image: bread,
+    name: "Bread",
   },
   {
-    image: mango,
-    name: "mango",
+    image: dry,
+    name: "Pantry",
   },
   {
-    image: orange,
-    name: "orange",
+    image: snowflake,
+    name: "Frozen",
+  },
+  {
+    image: cookie,
+    name: "Dessert",
   },
 ];
 export default category;
